@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Yandex.Market Ad Remover",
+  "version": "1.0",
+  "descriptions": "Remove sponsored product from results list on market.yandex.ru.",
+  "content_scripts": [
+    {
+      "matches": ["*://market.yandex.ru/*"],
+      "js": ["./index.js"]
+    }
+  ]
+}
